@@ -133,19 +133,19 @@ Board.prototype.selectPiece = function(clickedElement, selectedPiece) {
 Board.prototype.initiateGame = function() {
     // Create white pieces
     this.whitePieces = {
-        king: new King({ color: 'white', position: 'E1' }),
-        queen: new Queen({ color: 'white', position: 'D1' }),
+        king: new King({ color: 'white', position: 'E1',Board}),
+        queen: new Queen({ color: 'white', position: 'D1',Board}),
         bishops: [
-            new Bishop({ color: 'white', position: 'C1' }),
-            new Bishop({ color: 'white', position: 'F1' })
+            new Bishop({ color: 'white', position: 'C1',Board }),
+            new Bishop({ color: 'white', position: 'F1',Board })
         ],
         knights: [
-            new Knight({ color: 'white', position: 'B1' }),
-            new Knight({ color: 'white', position: 'G1' })
+            new Knight({ color: 'white', position: 'B1',Board }),
+            new Knight({ color: 'white', position: 'G1',Board})
         ],
         rooks: [
-            new Rook({ color: 'white', position: 'A1' }),
-            new Rook({ color: 'white', position: 'H1' })
+            new Rook({ color: 'white', position: 'A1',Board }),
+            new Rook({ color: 'white', position: 'H1',Board })
         ],
         pawns: []
     };
