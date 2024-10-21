@@ -178,6 +178,7 @@ Board.prototype.initiateGame = function() {
     for (let i = 0; i < 8; i++) {
         this.blackPieces.pawns.push(new Pawn({ color: 'black', position: String.fromCharCode(65 + i) + '7' }));
     }
+    this.turn = 'white';
 };
 
 Board.prototype.renderAllPieces = function() {

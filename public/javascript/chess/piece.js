@@ -5,6 +5,24 @@ var Piece = function(config){
         this.render();        
     }    
 }
+this.board = config.Board;
+this.turn =
+
+Piece.prototype.turn = function(){
+    console.log("Method not implemented by: " + this.type);
+}
+
+Piece.prototype.isValidPosition = function(targetPosition){
+    console.log("Method not implemented by: " + this.type);
+}
+
+if(this.turn === this.color){   
+    if(this.isValidPosition(targetPosition)){
+        this.moveTo(targetPosition);
+    }
+}
+
+
 Piece.prototype.moveTo = function(targetPosition){
     console.log("Method not implemeted by: " + this.type);
 }
